@@ -1,9 +1,10 @@
+How to Run
 ```shell
 npm i && ng serve
 ```
 
 
-
+----
 
 
 ## Angular Material M3 runtime colors
