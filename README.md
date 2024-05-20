@@ -1,3 +1,11 @@
+```shell
+npm i && ng serve
+```
+
+
+
+
+
 ## Angular Material M3 runtime colors
 
 Everybody who has worked with Angular Material versions 14 or below has probably noticed how complicated it can be to style the components provided by the framework. There is an entire guide in the documentation for defining custom CSS rules that directly style Angular Material components. One of the major problems not explicitly mentioned in the guide, but seen over time, is the high level of _specificity_ and _selectors_ used by the framework by default. Bypassing encapsulation of deeply nested CSS classes often ends up being a mix of `::ng-deep`, `!important`, and a bit of `luck` to achieve a simple modification without breaking everything.
