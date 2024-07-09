@@ -104,7 +104,6 @@ export class AppComponent {
     }
     styleString += '}';
 
-    debugger;
     this.applyThemeString(styleString, 'angular-material-theme');
   }
 
