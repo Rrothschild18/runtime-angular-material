@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use "sass:map";
 @use "@angular/material" as mat;
-@use "@angular/material-experimental" as matx;
 
 @include mat.core();
 
@@ -258,15 +257,15 @@ $m3-base-config: (
         100: #ffffff,
       ),
     ),
-    tertiary: matx.$m3-violet-palette,
+    tertiary: mat.$violet-palette,
   ),
 );
 
-$angular-material-3-theme: matx.define-theme(
+$angular-material-3-theme: mat.define-theme(
   map.set($m3-base-config, color, theme-type, light)
 );
 
-$angular-material-3-theme-dark: matx.define-theme(
+$angular-material-3-theme-dark: mat.define-theme(
   map.set($m3-base-config, color, theme-type, dark)
 );
 
@@ -276,7 +275,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   @include mat.core-theme($angular-material-3-theme);
   @include mat.all-component-themes($angular-material-3-theme);
-  @include matx.color-variants-back-compat($angular-material-3-theme);
+  @include mat.color-variants-backwards-compatibility($angular-material-3-theme);
 
   .dark {
     @include mat.all-component-colors($angular-material-3-theme-dark);
